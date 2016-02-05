@@ -1,6 +1,5 @@
 function Price(meat) {
 	var increase = 0;
-
 	this.meat = meat;
 //	console.log(this);
 	if(this.staple == "rice") {
