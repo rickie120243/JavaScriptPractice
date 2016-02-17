@@ -3,7 +3,7 @@ var menu = {
   beef : 50,
   misoSoup : 15,
   cake : 30,
-  fish : 40,
+  fish : 40
 };
 
 function Order(obj) {
@@ -22,7 +22,7 @@ Order.prototype.getPrice = function() {
 
 Order.prototype.addItems = function() {
   var arr =  Array.prototype.slice.call(arguments);
-  this.items = Array.prototype.concat.apply(this.items, arr);
+  this.items = this.items.concat(arr);
   return this;
 };
 
