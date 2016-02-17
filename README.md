@@ -17,7 +17,6 @@ http://stackoverflow.com/questions/1986896/what-is-the-difference-between-call-a
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
 
-http://stackoverflow.com/questions/1986896/what-is-the-difference-between-call-and-apply
 
 
 
