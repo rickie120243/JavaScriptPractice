@@ -7,7 +7,7 @@ var menu = {
 };
 
 function Order(obj) {
-  this.name = obj.name;
+  this.name = obj.name || 'Guest';
   this.items = obj.items;
 }
 
@@ -27,7 +27,7 @@ Order.prototype.addItems = function() {
 };
 
 var order = new Order({
-  name : 'Rickie',
+  name : '',
   items : ['rice', 'beef', 'misoSoup']
 });
 
