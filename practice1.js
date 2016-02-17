@@ -1,25 +1,25 @@
 function Price(meat) {
-	var increase = 0;
-	this.meat = meat;
-	if ('rice' === this.staple) {
-		increase = 10;
-	}
-	else if ('noodles' === this.staple) {
-		increase = 5;
-	}
-	if ('beef' === meat) {
-		this.price = 100 + increase;
-	}
-	else if ('pork' === meat) {
-		this.price = 80 + increase;
-	}
+  var increase = 0;
+  this.meat = meat;
+  if ('rice' === this.staple) {
+    increase = 10;
+  }
+  else if ('noodles' === this.staple) {
+    increase = 5;
+  }
+  if ('beef' === meat) {
+    this.price = 100 + increase;
+  }
+  else if ('pork' === meat) {
+    this.price = 80 + increase;
+  }
 }
 
 function Order(name, staple, meat, soup) {
-	this.name = name;
-	this.staple = staple;
-	Price.call(this, meat);
-	this.soup = soup;
+  this.name = name;
+  this.staple = staple;
+  Price.call(this, meat);
+  this.soup = soup;
 }
 
 var order1 = new Order('Rickie', 'rice', 'beef', 'miso soup');
