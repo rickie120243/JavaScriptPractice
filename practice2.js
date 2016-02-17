@@ -21,9 +21,8 @@ Order.prototype.getPrice = function() {
 };
 
 Order.prototype.addItems = function() {
-	for (var i in arguments) {
-		this.items.push(arguments[i]);
-	}
+	var arr =  Array.prototype.slice.call(arguments);
+	this.items = Array.prototype.concat.apply(this.items, arr);
 	return this;
 };
 
